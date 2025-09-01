@@ -8,10 +8,6 @@
 
 <h1>Add a New Book</h1>
 
-{% if success_message %}
-  <p style="color: green;">{{ success_message }}</p>
-{% endif %}
-
 <form action="/add_book" method="POST">
   <label for="isbn">ISBN:</label><br>
   <input type="text" id="isbn" name="isbn" required><br><br>
